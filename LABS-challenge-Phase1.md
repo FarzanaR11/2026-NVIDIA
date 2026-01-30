@@ -17,7 +17,7 @@ Your first task is to complete the provided scaffolded Jupyter Notebook (`labs_t
 
 *The Requirement:* You must add a "Self-Validation" section to the notebook. In this section, explain how you verified your results. Did you calculate solutions by hand for small N? Did you create unit tests?  Did you cross-reference your Quantum energy values against your Classical MTS results? Did you check known symmetries?
 
-**Deliverable 1:** A completed, executable version of the `XXXXXXXlabs_tutorial.ipynb` notebook. This must include your new "Self-Validation" section containing code or text explaining how you verified your baseline results (e.g., manual calculation for N=3, unit tests for symmetries, or brute-force comparison for small N).
+**Deliverable 1:** A completed, executable version of the `01_quantum_enhanced_optimization_LABS.ipynb` notebook. This must include your new "Self-Validation" section containing code or text explaining how you verified your baseline results (e.g., manual calculation for N=3, unit tests for symmetries, or brute-force comparison for small N).
 
 ---
 
