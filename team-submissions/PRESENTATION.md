@@ -16,7 +16,7 @@
 
 ---
 
-## Slide 2: The Problem - Why LABS Matters (1 minute)
+## Slide 2: The Problem - Why LABS Matters 
 
 ### **Low Autocorrelation Binary Sequences (LABS)**
 
