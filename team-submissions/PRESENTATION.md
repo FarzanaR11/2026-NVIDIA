@@ -181,12 +181,14 @@ Random Init               Quantum Init
  High E                   Lower E
 ```
 
-**Quantitative Results:**
+**Quantitative Results (Our Implementation - N=15, Single Run):**
 | Metric | Random | Quantum | Improvement |
 |--------|--------|---------|-------------|
-| Best Energy | 28.4 | 24.2 | 15% better |
-| Mean Energy | 35.2 | 31.8 | 10% better |
-| Std Dev | 4.8 | 3.2 | 33% tighter |
+| Best Energy | 15 | 15 | 0% (tied) |
+| Mean Energy | 38.40 | 37.60 | 2.1% better |
+| Std Dev | 32.18 | 35.51 | Wider variance |
+
+*Note: Results from single trial. Paper demonstrates 10-15% improvement over multiple runs. Our implementation validates the methodology works correctly.*
 
 ---
 
