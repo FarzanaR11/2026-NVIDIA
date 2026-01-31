@@ -4,7 +4,7 @@
 
 ---
 
-## Slide 1: Title Slide (30 seconds)
+## Slide 1: Title Slide 
 
 ### **Quantum-Enhanced Optimization for LABS**
 **Scaling Advantage with Hybrid Quantum-Classical Methods**
@@ -40,7 +40,7 @@ E(s) = Σ C_k²  where  C_k = Σ s_i · s_{i+k}
 
 ---
 
-## Slide 3: Our Approach - Hybrid Quantum-Classical (1 minute)
+## Slide 3: Our Approach - Hybrid Quantum-Classical 
 
 ### **Quantum-Enhanced Memetic Tabu Search (QE-MTS)**
 
@@ -67,7 +67,7 @@ E(s) = Σ C_k²  where  C_k = Σ s_i · s_{i+k}
 
 ---
 
-## Slide 4: Implementation - The Quantum Circuit (1.5 minutes)
+## Slide 4: Implementation - The Quantum Circuit 
 
 ### **Digitized Counteradiabatic Evolution**
 
@@ -103,7 +103,7 @@ def trotterized_circuit(N, G2, G4, thetas):
 
 ---
 
-## Slide 5: Implementation - Classical Optimization (1 minute)
+## Slide 5: Implementation - Classical Optimization 
 
 ### **Memetic Tabu Search (MTS)**
 
@@ -141,7 +141,7 @@ def memetic_tabu_search(N, pop_size, generations):
 
 ---
 
-## Slide 6: Results - Quantum vs Random Initialization (2 minutes)
+## Slide 6: Results - Quantum vs Random Initialization 
 
 ### **Comparison: QE-MTS vs Standard MTS**
 
@@ -192,7 +192,7 @@ Random Init               Quantum Init
 
 ---
 
-## Slide 7: GPU Acceleration Strategy (1 minute)
+## Slide 7: GPU Acceleration Strategy 
 
 ### **Phase 2: Scaling with GPU Acceleration**
 
@@ -233,7 +233,7 @@ def compute_energy_gpu(population):
 
 ---
 
-## Slide 8: Verification & Testing (1 minute)
+## Slide 8: Verification & Testing 
 
 ### **Rigorous Quality Assurance**
 
@@ -269,7 +269,7 @@ def compute_energy_gpu(population):
 
 ---
 
-## Slide 9: AI Usage & Workflow (1 minute)
+## Slide 9: AI Usage & Workflow 
 
 ### **Thoughtful AI Orchestration**
 
@@ -304,7 +304,7 @@ def compute_energy_gpu(population):
 
 ---
 
-## Slide 10: Scaling Analysis & Future Work (1 minute)
+## Slide 10: Scaling Analysis & Future Work 
 
 ### **Theoretical Scaling Advantage**
 
@@ -351,7 +351,7 @@ Time to Solution
 
 ---
 
-## Slide 11: Key Contributions (30 seconds)
+## Slide 11: Key Contributions 
 
 ### **What We Achieved**
 
@@ -379,7 +379,7 @@ Time to Solution
 
 ---
 
-## Slide 12: Conclusion & Takeaways (30 seconds)
+## Slide 12: Conclusion & Takeaways 
 
 ### **Key Messages**
 
@@ -404,7 +404,7 @@ Time to Solution
 
 ---
 
-## Slide 13: Thank You & Questions (remainder)
+## Slide 13: Thank You & Questions 
 
 ### **Thank You!**
 
@@ -426,130 +426,5 @@ Time to Solution
 
 ---
 
-### **Q&A - Anticipated Questions**
 
-**Q1: "How do you know the quantum circuit is correct?"**
-A: Three-layer validation:
-1. Unit tests verify gate structure
-2. Cross-reference against paper Figure 4
-3. Quantum samples produce physically valid sequences
 
-**Q2: "Did you actually run this on a GPU?"**
-A: Phase 1 (CPU) complete. Phase 2 targets Brev L4/A100 for:
-- CUDA-Q nvidia backend for quantum simulation
-- CuPy acceleration for classical MTS
-- Target: N=35-40 on GPU
-
-**Q3: "What's the biggest challenge you faced?"**
-A: GPU code generation. AI struggled with parallel autocorrelation computation. Solution: Human wrote CPU baseline, AI translated to GPU.
-
-**Q4: "Is quantum really better or just lucky?"**
-A: Good question! For rigorous comparison:
-- Need 10+ replicate runs
-- Statistical significance testing
-- Our demo shows proof-of-concept
-- Paper validates with extensive experiments
-
-**Q5: "Can this scale to real-world problems?"**
-A: Current: N ≤ 35 (CPU/small GPU)
-- With multi-GPU: N = 47+ feasible
-- Paper predicts advantage at N ≥ 47
-- Real radar applications: N = 50-100 (future work)
-
----
-
-## Presentation Delivery Notes
-
-### **Timing Breakdown:**
-- Slides 1-3: Problem setup (2.5 min)
-- Slides 4-5: Implementation (2.5 min)
-- Slides 6-7: Results & GPU (3 min)
-- Slides 8-9: Testing & AI (2 min)
-- Slides 10-13: Conclusions (2 min)
-- **Total: ~12 min** (trim to 10 min if needed)
-
-### **Speaker Notes:**
-
-**Energy & Enthusiasm:**
-- This is cutting-edge research (Nov 2025 paper) implemented in 1.5 hours!
-- We're demonstrating quantum advantage TODAY, not in 10 years
-
-**Technical Depth:**
-- Judges are experts—don't oversimplify
-- Show equations, code snippets, technical details
-- But keep narrative clear: Problem → Solution → Results
-
-**Visual Aids:**
-- Use images from tutorial_notebook/images/ folder
-- Show live demo if time permits (Jupyter notebook)
-- Display energy convergence plots (generate in notebook)
-
-**Transitions:**
-- "Now that we understand the problem, let's see our solution..."
-- "The quantum circuit works, but how do we know? Our testing strategy..."
-- "With validation complete, let's look at results..."
-
-### **Backup Slides (if extra time):**
-
-**Backup 1: Detailed Circuit Equations**
-- Full Hamiltonian derivation
-- Trotter decomposition math
-- Theta computation formulas
-
-**Backup 2: MTS Algorithm Deep Dive**
-- Tabu search mechanism
-- Tournament selection details
-- Mutation operator analysis
-
-**Backup 3: Extended Results**
-- More N values (N=7, 11, 15, 20)
-- Multiple trial statistics
-- Scaling curves
-
----
-
-## Demo Script (if live demo requested)
-
-**Setup (30 seconds):**
-```bash
-cd tutorial_notebook
-jupyter notebook 01_quantum_enhanced_optimization_LABS.ipynb
-```
-
-**Demo 1: Classical MTS (1 min):**
-```python
-# Run cell with MTS
-best, energy, pop, hist = memetic_tabu_search(11, generations=20)
-print(f"Best energy: {energy}")
-visualize_mts_results(pop, hist)
-```
-Show convergence plot in real-time
-
-**Demo 2: Quantum Circuit (1 min):**
-```python
-# Run quantum sampling cell
-result = cudaq.sample(trotterized_circuit, ...)
-print("Quantum samples:", list(result.items())[:5])
-```
-Show actual quantum bitstrings
-
-**Demo 3: Comparison (1.5 min):**
-```python
-# Run comparison cell (Exercise 6)
-# Shows side-by-side energy distributions
-```
-Highlight the difference in distributions
-
-**Demo 4: Tests (30 seconds if time):**
-```bash
-cd ..
-pytest tests.py -v
-```
-Show all tests passing
-
----
-
-**Presentation Version:** 1.0
-**Created:** January 31, 2026
-**Format:** Markdown (convert to PowerPoint/PDF as needed)
-**Estimated Duration:** 10-12 minutes + Q&A
