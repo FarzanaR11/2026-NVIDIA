@@ -275,15 +275,14 @@ jupyter notebook
 
 ## 📞 Team Information
 
-**Project Lead:** [Your Name]
-**Repository:** https://github.com/[your-username]/2026-NVIDIA
-**Contact:** [Your Discord/Email]
+**Team Name:** Quantum Brainwave
+**Project Lead:** Farzana Rahman (@FarzanaR11)
+**Repository:** https://github.com/FarzanaR11/2026-NVIDIA
+**Contact:** Discord: farzana3301, Shams Nibir
 
-**Team Roles:**
-- Project Lead (Architecture, Integration)
-- GPU Acceleration PIC (Future GPU implementation)
-- Quality Assurance PIC (Testing, Validation)
-- Technical Marketing PIC (Documentation, Presentation)
+**Team Members & Roles:**
+- **Farzana Rahman** - Project Lead (Architecture, Integration, Quality Assurance)
+- **Shams Ul Arefin Nibir** - Technical Marketing PIC (Documentation, Presentation)
 
 ---
 
